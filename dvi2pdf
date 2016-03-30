@@ -1,0 +1,2 @@
+dvips -Ppdf -G0 ${1}.dvi -o ${1}.ps
+ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true ${1}.ps

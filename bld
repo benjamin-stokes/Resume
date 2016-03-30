@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+latex BenStokesCV.tex
+./dvi2pdf BenStokesCV
+mv BenStokesCV.pdf BenStokesCV_`date +%Y%m%d`.pdf
+pdflatex BenStokesResume.tex
+mv BenStokesResume.pdf BenStokesResume_`date +%Y%m%d`.pdf
+rm *.aux *.out *.log *.dvi *.ps

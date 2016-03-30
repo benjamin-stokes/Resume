@@ -1,0 +1,322 @@
+%-------------------------------------------------------------------------------
+%PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article} % Font size (10-12pt) and
+                                % paper size (a4paper, letterpaper,
+                                % legalpaper, etc)
+
+\include{Resume_sty} % Include structure.tex which contains packages
+                    % and document layout definitions
+
+\hyphenation{Some-long-word} % Specify custom hyphenation points in
+                             % words with dashes where you would like
+                             % hyphenation to occur, or alternatively,
+                             % don't put any dashes in a word to stop
+                             % hyphenation altogether
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%NAME AND CONTACT INFORMATION
+%-------------------------------------------------------------------------------
+
+\maintitle{Benjamin Stokes, Ph.D.}{}
+
+\noindent\textsmaller{+}1 (801) 839-8993\bull
+\href{mailto:stokes@cosmic.utah.edu}{stokes@cosmic.utah.edu}\bull
+\href{https://github.com/benjamin-stokes}
+{github.com/benjamin-stokes}\\
+\href{http://www.linkedin.com/in/benjamintstokes}
+{www.linkedin.com/in/benjamintstokes}\bull
+\href{https://plus.google.com/+BenjaminStokesPhD}
+{plus.google.com/\textsmaller{+}BenjaminStokesPhD}
+
+\spacedhrule{0.9em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%SUMMARY SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Summary}
+
+\vspace{-0.3em}
+\bodytext{\textit{I am a problem solver with extensive experience
+    collecting, processing, and analyzing large amounts of data in
+    distributed settings.  Through a high degree of creative
+    persistence, I have successfully tackled extremely difficult
+    problems.  Specific areas of expertise include:}
+  \begin{multicols}{2}  % Start a two-column layout
+  \begin{itemize}
+\item Big data management
+\vspace{-0.3em}\item Data reduction and analysis
+\vspace{-0.3em}\item Statistical methods and machine learning
+\vspace{-0.3em}\item Algorithm development and implementation
+\vspace{-0.3em}\item Distributed systems
+\vspace{-0.3em}\item Advanced troubleshooting
+\item Software architecture and design
+\vspace{-0.3em}\item Monte Carlo modeling and simulations
+\vspace{-0.3em}\item \acr{HPC} design and administration
+\vspace{-0.3em}\item Strategic problem solving
+\vspace{-0.3em}\item International collaboration
+\vspace{-0.3em}\item Public presentations
+\vspace{-0.3em}  \end{itemize}
+\end{multicols}}
+
+\spacedhrule{0.5em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%SKILLS SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Skills}
+
+\inlineheadsection
+    {Computer Languages:}
+    {\acr{C}, Bash, \acr{R}, Go, Python, \LaTeX, \acr{C++},
+      \acr{FORTRAN}, My\acr{SQL}, Tcsh, Visual Basic, Wiki, \acr{XML}}
+
+    \inlineheadsection
+        {Data Management, Statistical Analysis, and Machine Learning:}
+        {C, Bash, No\acr{SQL}, \acr{R}, Python, My\acr{SQL}, Excel}
+
+    \inlineheadsection
+        {Distributed Systems and Virtualization:}
+        {\acr{PBS}, Rocks, VirtualBox, \acr{VM}ware, Hadoop,
+          MapReduce, Spark, \acr{AWS}}
+
+    \inlineheadsection
+        {Frameworks, Environments, and Operating Systems:}
+        {Linux, Emacs, Windows, \acr{SVN}, Git, Unix, Xilinx}
+
+    \inlineheadsection
+        {Natural languages:}
+        {English \textit{(native proficiency)}, Russian
+          \textit{(elementary proficiency)}, French \textit{(beginner)}}
+
+\spacedhrule{2.0em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Experience}
+
+\headedsection
+{\href{http://www.utah.edu}{University of Utah}}
+{\textsc{Salt Lake City, Utah}} {
+
+\headedsubsection
+{Postdoctoral Research Associate}
+{May '10 -- present}
+{\bodytext{I am a research collaborator with the
+    \href{http://www.telescopearray.org}{Telescope Array} (\acr{TA})
+    cosmic ray observatory. As a one-of-a-kind facility, the 150
+    scientists and technologists in the \acr{TA} collaboration are
+    responsible for design and maintenance of remote facilities (in
+    Millard County, Utah), data acquisition, data storage, data
+    analysis and public dissemination of resulting scientific
+    knowledge.  This mission has required the \acr{TA} collaboration
+    to develop extensive computational resources and has resulted in
+    groundbreaking discoveries about the origin and composition of
+    cosmic rays. My principal achievements include:
+    \begin{itemize}
+    \item \textit{\textbf {Developing a
+          \href{http://arxiv.org/abs/1103.4643}{technique} for mapping
+          and reducing parallel computations.}} I pursued this effort
+      with the aim of open-ended scalability and robust fault
+      protection. The resulting software could be described as a
+      highly specialized reinvention of MapReduce implemented on Linux
+      clusters with bash scripting employing a high degree of
+      concurrency.
+    \item \textit{\textbf{Designing the primary framework for the
+          Monte Carlo simulation of the \acr{TA} observatory.}}  This
+      effort entailed integrating 40 years worth of legacy code
+      (\acr{FORTRAN} and \acr{C}), writing 20,000 lines of new code
+      (\acr{C}, \acr{C++} and No\acr{SQL}), and innovating an entirely
+      \href{http://arxiv.org/abs/1104.3182}{novel algorithmic
+        approach}.  The
+      \href{http://arxiv.org/abs/1403.0644}{resulting simulations} are
+      \href{http://arxiv.org/abs/1205.5067}{unprecedented} in detail
+      and accuracy.
+   \item \textit{\textbf{Engaging in big data management.}}  In
+     addition to the two Linux clusters described below, I built and
+     manage a 50~TB Linux data server and manage a 10~TB remote data
+     space. The simulation framework described above is capable of
+     producing 500~GB per day.  In order to effectively utilize this
+     data, I have developed a keen sense of foresight towards data
+     logistics.
+    \item \textit{\textbf{Becoming a master troubleshooter.}}  The
+      \acr{TA} observatory is operational 24 hours per day, 365 days
+      per year.  With operational costs and capital outlays exceeding
+      \$100,000 per month, it is imperative that any problems be
+      addressed promptly. As a mid-level collaboration member, I have
+      developed the skills to rapidly troubleshoot a broad array of
+      hardware and software problems.
+    \item \textit{\textbf{Engaging in international collaboration.}}
+      The \acr{TA} collaboration is 70\% Japanese and, in addition to
+      the University of Utah, also has member institutions in South
+      Korea, Belgium, and Russia.  Working in this diverse setting has
+      taught me to value, above all else, clear communication while
+      respecting the cultural differences and sensitivities of those
+      around me.
+\end{itemize}}}}
+
+\newpage
+
+%-------------------------------------------------------------------------------
+%NAME AND CONTACT INFORMATION
+%-------------------------------------------------------------------------------
+
+\maintitle{Benjamin Stokes, Ph.D.}{}
+
+\noindent\textsmaller{+}1 (801) 839-8993\bull
+\href{mailto:stokes@cosmic.utah.edu}{stokes@cosmic.utah.edu}\bull
+\href{https://github.com/benjamin-stokes}
+{github.com/benjamin-stokes}\\
+\href{http://www.linkedin.com/in/benjamintstokes}
+{www.linkedin.com/in/benjamintstokes}\bull
+\href{https://plus.google.com/+BenjaminStokesPhD}
+{plus.google.com/\textsmaller{+}BenjaminStokesPhD}
+
+\spacedhrule{0.9em}{-0.2em}
+
+%-------------------------------------------------------------------------------
+%EXPERIENCE SECTION (cont.)
+%-------------------------------------------------------------------------------
+
+\roottitle{Experience (cont.)}
+
+\headedsection
+{\href{http://www.rutgers.edu}{Rutgers, The State University of New Jersey}}
+{\textsc{Piscataway, New Jersey}} {
+
+\headedsubsection
+{Postdoctoral Associate}
+{Jul '08 -- Apr '10}
+{\bodytext{I first joined the \acr{TA} collaboration as a researcher
+    with the affiliated group at Rutgers University.  While my
+    position was officially in New Jersey, I spent most of my time on
+    remote deployment in Utah. In addition to commencing the projects
+    described in the previous section, relevant experience included:
+    \begin{itemize}
+    \item \textit{\textbf{Building and administering two 20-node
+          \href{http://www.rocksclusters.org}{Rocks} Linux clusters.}}
+      This proved to be an important test bed for later distributed
+      computing  initiatives.
+    \item \textit{\textbf{Learning to work remotely.}}  Spending the
+      majority of my time 3000~km from the rest of my research group
+      was an excellent opportunity to develop independence, clear
+      communication, and self-motivation.
+    \end{itemize}}}}
+
+\headedsection
+    {\href{http://manoa.hawaii.edu}{University of Hawai`i at M\={a}noa}}
+    {\textsc{Honolulu, Hawai`i}}{
+
+\headedsubsection
+{Research Fellow}
+{Jan '05 -- Aug '06}
+{\bodytext{I spent 18 months in a research fellowship studying radio
+    detection of cosmic rays and neutrinos as a member of both the
+    \href{http://arxiv.org/abs/astro-ph/0512265}{ANITA} and
+    \href{http://arxiv.org/abs/0705.2589}{AMBER} collaborations.
+    Major activities included:
+    \begin{itemize}
+    \item \textit{\textbf{Designing and debugging embedded systems.}}
+      I developed both embedded software (Linux and \acr{C}) and
+      firmware (Xilinx).
+    \item \textit{\textbf{Designing and running Monte Carlo
+          simulations.}} I designed simulations both by writing new
+      code (\acr{C}) and by adapting legacy code (\acr{C} and
+      \acr{FORTRAN}) with the objective of studying different
+      observation scenarios.
+    \end{itemize}}}
+
+\headedsubsection
+{Junior Researcher}
+{Sep '06 -- Jun '08}
+{\bodytext{After my astrophysics research fellowship ended, I decided
+    to remain in Honolulu and secured a position with the
+    \href{http://hawaii.edu/mri/home_v6.htm}{Neuroscience and
+      \acr{MRI} Research Program}.  My primary responsibilities
+    included analyzing \acr{fMRI} data, administering a 25-node Linux
+    cluster, and performing clinical duties.  Major milestones included:
+    \begin{itemize}
+    \item \textit{\textbf{Successfully executing a major domain
+          change.}} In making the transition to neuroscience, I
+      quickly learned a whole new nomenclature and worldview. In doing
+      so, I developed extensive strategies for efficiently tackling
+      unfamiliar problems.
+    \item \textit{\textbf{Contributing to enterprise software
+          development.}} After attending a two-week training course in
+      North Carolina, I participated in development of the operational
+      source code (\acr{C++}) of Siemens \acr{MRI} scanners.
+    \end{itemize}}}}
+
+\spacedhrule{0.8em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Education}
+
+\headedsection
+{University of Utah}
+{\textsc{Salt Lake City, Utah}} {
+
+\headedsubsection
+{Doctor of Philosophy in Physics}
+{}
+{\bodytext{Dissertation:
+    \href{http://www.cosmic-ray.org/thesis/stokes.html}{\textit{A
+        Search for Anisotropy in the Arrival Directions of Ultra High
+        Energy Cosmic Rays Observed by the High Resolution Fly's Eye
+        Detector}}}}
+
+\headedsubsection
+{Bachelor of Arts in Physics}
+{}{}}
+
+
+\headedsection
+{Timpview High School}
+{\textsc{Provo, Utah}} {
+
+\headedsubsection
+{High School Diploma}
+{}
+{\bodytext{Valedictorian}}
+}
+
+\spacedhrule{1.0em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%AWARDS SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Awards}
+
+\bodytext{\begin{itemize}
+\item Outstanding Postdoctoral Researcher, \textit{University of Utah
+    Department of Physics and Astronomy}
+\vspace{-0.3em}\item U.S.\ Presidential Scholar, \textit{White House}
+\vspace{-0.3em}\item National Science Scholar, \textit{U.S.\
+  Department of Education}
+\vspace{-0.3em}\item Eagle Scout, \textit{Boy Scouts of America}
+\end{itemize}}
+
+\spacedhrule{1.0em}{-0.4em}
+
+%-------------------------------------------------------------------------------
+%OTHER INTERESTS SECTION
+%-------------------------------------------------------------------------------
+
+\roottitle{Other Interests}
+
+\bodytext{Among many passions, I am a four-season mountaineer, a
+  classically-trained double bassist, and an internationally published
+  amateur photographer.}
+
+\end{document}
