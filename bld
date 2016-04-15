@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 latex BenStokesCV.tex
 ./dvi2pdf BenStokesCV
